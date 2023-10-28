@@ -1,8 +1,17 @@
-html,
-body {
-    height: 100%
+container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Isso faz com que o contêiner ocupe toda a altura da tela */
+    text-align: center;
 }
 
-#text {
-    margin-top: 50px;
+image-container {
+    max-width: 100%; /* Isso impede que a imagem se expanda além do contêiner */
+    overflow: hidden; /* Isso impede que a imagem seja cortada */
+}
+
+img {
+    max-width: 100%; /* Isso garante que a imagem se ajuste ao contêiner */
+    height: auto; /* Isso mantém a proporção da imagem */
 }
